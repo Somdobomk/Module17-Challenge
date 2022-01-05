@@ -1,5 +1,31 @@
 # Module 17 - Regex Tutorial
 
+<h1 align="center">
+    <a href="https://gist.github.com/Somdobomk/bfb809a4018b8fb7b59d01961715e3cd" target="_blank">
+     View Demo
+    </a>
+</h1>
+<div align="center">
+    <img src="./assets/images/screenshot.jpg" width="600px">
+</div>
+
+## Table of Contents
+
+- [Module 17 - Regex Tutorial](#module-17---regex-tutorial)
+  - [Table of Contents](#table-of-contents)
+  - [Summary](#summary)
+  - [Regex Components](#regex-components)
+    - [Anchors](#anchors)
+    - [Quantifiers](#quantifiers)
+    - [OR Operator](#or-operator)
+    - [Character Classes](#character-classes)
+    - [Flags](#flags)
+    - [Grouping and Capturing](#grouping-and-capturing)
+    - [Bracket Expressions](#bracket-expressions)
+    - [Greedy and Lazy Match](#greedy-and-lazy-match)
+    - [Boundaries](#boundaries)
+    - [Back-references](#back-references)
+
 This is a collection of challenges for learning regex. By completing these challenges, you will learn how to use regex to parse text. Throughout this tutorial we'll be referencing the [regex101.com](https://regex101.com) website.
 
 ## Summary
@@ -18,25 +44,7 @@ Regular expression for hexadecimal numbers: `^[0-9A-F]+$`
 
 Regular expression for hexadecimal colors: `^#?([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$`
 
-
 The goal of each regex is to match a string of characters against a pattern. The pattern is a string of characters that defines the type of string that we want to match.
-
-## Table of Contents
-
-- [Module 17 - Regex Tutorial](#module-17---regex-tutorial)
-  - [Summary](#summary)
-  - [Table of Contents](#table-of-contents)
-  - [Regex Components](#regex-components)
-    - [Anchors](#anchors)
-    - [Quantifiers](#quantifiers)
-    - [OR Operator](#or-operator)
-    - [Character Classes](#character-classes)
-    - [Flags](#flags)
-    - [Grouping and Capturing](#grouping-and-capturing)
-    - [Bracket Expressions](#bracket-expressions)
-    - [Greedy and Lazy Match](#greedy-and-lazy-match)
-    - [Boundaries](#boundaries)
-    - [Back-references](#back-references)
 
 ## Regex Components
 
