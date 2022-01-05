@@ -25,24 +25,20 @@
     - [Greedy and Lazy Match](#greedy-and-lazy-match)
     - [Boundaries](#boundaries)
     - [Back-references](#back-references)
+    - [User Story](#user-story)
+    - [Acceptance Criteria](#acceptance-criteria)
 
 This is a collection of challenges for learning regex. By completing these challenges, you will learn how to use regex to parse text. Throughout this tutorial we'll be referencing the [regex101.com](https://regex101.com) website.
 
 ## Summary
 
-Regular expression for email addresses: `^[a-zA-Z0-9.!#$%&'*+/=?^_{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$`
+Matching an email address: `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
-Regular expression for phone numbers: `^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$`
+Matching a Hex Value: `/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`
 
-Regular expression for URLs: `^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$`
+Matching a URL: `/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/`
 
-Regular expression for IP addresses: `^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$`
-
-Regular expression for credit card numbers: `^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$`
-
-Regular expression for hexadecimal numbers: `^[0-9A-F]+$`
-
-Regular expression for hexadecimal colors: `^#?([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$`
+Matching an HTML Tag: `/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/`
 
 The goal of each regex is to match a string of characters against a pattern. The pattern is a string of characters that defines the type of string that we want to match.
 
@@ -210,4 +206,26 @@ Hello$
 (a)(b)(c)(d)(e)(f)(g)(h)(i)(j)(k)(l)
 (a)(b)(c)(d)(e)(f)(g)(h)(i)(j)(k)(l)(m)
 (a)(b)(c)(d)(e)(f)(g)(h)(i)(j)(k)(l)(m)(n)
+```
+
+### User Story
+
+```
+AS A web development student
+I WANT a tutorial explaining a specific regex
+SO THAT I can understand the search pattern the regex defines
+```
+
+### Acceptance Criteria
+
+```
+GIVEN a regex tutorial
+WHEN I open the tutorial
+THEN I see a descriptive title and introductory paragraph explaining the purpose of the tutorial, a summary describing the regex featured in the tutorial, a table of contents linking to different sections that break down each component of the regex and explain what it does, and a section about the author with a link to the author’s GitHub profile
+WHEN I click on the links in the table of contents
+THEN I am taken to the corresponding sections of the tutorial
+WHEN I read through each section of the tutorial
+THEN I find a detailed explanation of what a specific component of the regex does
+WHEN I reach the end of the tutorial
+THEN I find a section about the author and a link to the author’s GitHub profile
 ```
